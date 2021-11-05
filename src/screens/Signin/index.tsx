@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { 
-  View, 
-  Text, 
+import {
+  View,
+  Text,
   Image
 } from 'react-native';
 
@@ -11,13 +11,13 @@ import { styles } from './style';
 
 export function SignIn(){
   const [text, setText] = useState('');
-  
+
 
   return(
     <View style={styles.container}>
-     
-      <Image 
-        source={IllustrationImg}  
+
+      <Image
+        source={IllustrationImg}
         style={styles.image}
         resizeMode="stretch"
       />
@@ -34,7 +34,7 @@ export function SignIn(){
           favoritos com seus amigos
         </Text>
 
-        <ButtonIcon 
+        <ButtonIcon
         title="Entrar com Discord"
         activeOpacity={0.5}/>
       </View>
