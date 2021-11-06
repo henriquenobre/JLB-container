@@ -8,9 +8,9 @@ import{
     TouchableOpacityProps
 } from  'react-native'
 
-import * as S from "./style2";
+import * as S from "./style";
 import DiscordImg from '../../assets/discord.png'
-import { styles } from "./style";
+
 
 
 type Props = TouchableOpacityProps & {

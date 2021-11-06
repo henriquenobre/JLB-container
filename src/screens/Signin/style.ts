@@ -4,29 +4,32 @@ export const Container = styled.View`
     flex: 1;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: lightblue;
 `;
 
 export const Image = styled.Image`
   width: 100%;
-  height: 360;
+  height: 300;
 `
 export const Title = styled.Text`
   color: aliceblue;
   text-align: center;
   margin-bottom: 16;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: 'Open Sans';
   line-height: 25;
+  font-size: 32px;
 `
-export const SubTitle = styled.Text`
-  color: aliceblue;
-  text-align: center;
-  font-size: 15;
-  margin-bottom: 64;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
-  line-height: 25;
-`
+
 export const Content = styled.View`
-  margin-top: -40;
-  margin-top: 50;
+  justify-content: center;
+    align-items: center;
+    margin-top: 15;
+`
+export const InputField = styled.TextInput`
+  height: 50px;
+  width: 300px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 15px;
+  padding-left: 10;
+  margin-top: 10px;
 `

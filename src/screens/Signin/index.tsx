@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ButtonIcon } from '../../components/Buttonicon';
-import IllustrationImg from '../../assets/illustration.png'
+import IllustrationImg from '../../assets/illustration.jpeg'
 import * as S from './style';
 
 export function SignIn(){
@@ -17,19 +17,17 @@ export function SignIn(){
 
       <S.Content >
         <S.Title >
-          Conecte-se {'\n'}
-          e organize suas{'\n'}
-          jogatinas
+          Login
         </S.Title>
 
-        <S.SubTitle>
-          Crie grupos para jogar seus games {'\n'}
-          favoritos com seus amigos
-        </S.SubTitle>
+      <S.InputField
+      placeholder="Usuário"
+      />
+      <S.InputField
+      placeholder="Senha"
+      secureTextEntry={true}
+      />
 
-        <ButtonIcon
-        title="Entrar com Discord"
-        activeOpacity={0.5}/>
       </S.Content>
     </S.Container>
   )
