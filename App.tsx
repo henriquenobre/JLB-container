@@ -22,7 +22,7 @@ export default function App(){
 
   return(
     <Fragment>
-    <StatusBar 
+    <StatusBar
       barStyle="light-content"
       backgroundColor="transparent"
       translucent
