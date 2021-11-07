@@ -13,34 +13,31 @@ export const Image = styled.Image`
   height: 160px;
   margin-top: -50px;
 `
-export const Title = styled.Text`
-  color: #ff9100;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 30px;
-`
 
 export const Content = styled.View`
   justify-content: center;
     align-items: center;
     margin-top: 100px;
 `
-
-export const InputField = styled.TextInput`
+export const CardMenu = styled.View`    
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   height: 50px;
-  width: 300px;
-  background-color: #edcc8f;
+  width: 240px;
+  background-color: #fbfbfb;
   border-radius: 8px;
   padding-left: 10px;
   margin-top: 10px;
 `
-export const SubTitle = styled.Text`
-  margin-top: 20px;
-  color: black;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 16px;
 
+export const TextCard = styled.Text`
+    color: #004aad;
+    font-size: 24px;
 `
+export const IconImage = styled.Image`
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+`
+

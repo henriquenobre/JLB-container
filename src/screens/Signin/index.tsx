@@ -27,6 +27,12 @@ export function SignIn(){
       placeholder="Senha"
       secureTextEntry={true}
       />
+      <ButtonIcon
+      title="Login"
+      activeOpacity={0.5} />
+      <S.SubTitle>
+        Cadastre-se
+      </S.SubTitle>
 
       </S.Content>
     </S.Container>

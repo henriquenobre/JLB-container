@@ -22,9 +22,6 @@ export function ButtonIcon({ title, ...rest }: Props){
         <S.Container
         {...rest}
         >
-            <S.iconWrapper>
-                <S.Icon source={DiscordImg}/>
-            </S.iconWrapper>
             <S.Title>
                     {title}
             </S.Title>

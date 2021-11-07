@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "gameplay",
-    "slug": "gameplay",
+    "name": "JBL-container",
+    "slug": "JBL-container",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#a2a229"
+      "backgroundColor": "#ff9100"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
