@@ -19,7 +19,7 @@ export const Content = styled.View`
     align-items: center;
     margin-top: 100px;
 `
-export const CardMenu = styled.View`    
+export const CardMenu = styled.TouchableOpacity`    
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -36,8 +36,8 @@ export const TextCard = styled.Text`
     font-size: 24px;
 `
 export const IconImage = styled.Image`
-    height: 35px;
-    width: 35px;
+    height: 80px;
+    width: 50px;
     margin-right: 10px;
 `
 
