@@ -3,7 +3,7 @@ import { ButtonIcon } from '../../components/Buttonicon';
 import IllustrationImg from '../../assets/illustration.jpeg'
 import * as S from './style';
 
-export function SignIn(){
+export function SignIn({ navigation }){
   const [text, setText] = useState('');
 
 
@@ -29,7 +29,8 @@ export function SignIn(){
       />
       <ButtonIcon
       title="Login"
-      activeOpacity={0.5} />
+      activeOpacity={0.5}
+      onPress={ () => navigation.navigate('Menu') } />
       <S.SubTitle>
         Cadastre-se
       </S.SubTitle>

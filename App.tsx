@@ -27,12 +27,10 @@ export default function App(){
 
   return(
     <NavigationContainer>
-      <Stack.Navigator>
-    <StatusBar
-      barStyle="light-content"
-      backgroundColor="transparent"
-      translucent
-      />
+      <Stack.Navigator
+      screenOptions={{
+      headerShown: false
+  }}>
     <Stack.Screen name="SingIn" component={SignIn} />
     <Stack.Screen name="Menu" component={Menu} />
     </Stack.Navigator>
