@@ -9,6 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { SignIn } from './src/screens/Signin/index';
 import { Menu } from './src/screens/Menu';
+import { Container } from './src/screens/Container6';
 
 
 export default function App(){
@@ -33,6 +34,7 @@ export default function App(){
   }}>
     <Stack.Screen name="SingIn" component={SignIn} />
     <Stack.Screen name="Menu" component={Menu} />
+    <Stack.Screen name="Container" component={Container} />
     </Stack.Navigator>
     </NavigationContainer>
   );

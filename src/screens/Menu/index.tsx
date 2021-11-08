@@ -7,7 +7,7 @@ import CalendarioIcon from '../../assets/calendario.png'
 import LocalizacaoIcon from '../../assets/localizacao.png'
 import * as S from './style';
 
-export function Menu(){
+export function Menu( {navigation} ){
   const [text, setText] = useState('');
 
 
@@ -27,7 +27,8 @@ export function Menu(){
             />
         </S.CardMenu>
 
-        <S.CardMenu>
+        <S.CardMenu
+        onPress={ () => navigation.navigate('Container') }>
             <S.TextCard>Containers 6M</S.TextCard>
             <S.IconImage 
             source={Container3Icon}
