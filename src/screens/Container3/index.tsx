@@ -5,7 +5,7 @@ import IconLogo from '../../assets/IconLogo.jpeg'
 import IconFunil from '../../assets/IconFunil.jpeg'
 import NumberContainer from '../../assets/NumberContainer.jpeg'
 
-export function Container6({ navigation }) {
+export function Container3({ navigation }) {
     const [text, setText] = useState('');
 
 
@@ -23,7 +23,7 @@ export function Container6({ navigation }) {
 
             <S.Content >
                 <S.ContainerText>
-                    <S.Tittle>Containers - 6 Metros</S.Tittle>
+                    <S.Tittle>Containers - 3 Metros</S.Tittle>
                 </S.ContainerText>
                 <S.CardContainer onPress={() => navigation.navigate('ContainerOptions')}>
                     <S.IconNumber source={NumberContainer} />
