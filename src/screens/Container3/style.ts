@@ -18,7 +18,9 @@ export const HeaderLogo = styled.View`
 `
 
 export const HeaderIcon = styled.Image`
-   margin-top: 40px;
+    height: 80px;
+    width: 100px;
+    margin-top: 50px;
 `
 export const IconNavigation = styled.TouchableOpacity``
 
@@ -56,7 +58,7 @@ export const CardContainer = styled.TouchableOpacity`
 export const CardContainerText = styled.View`
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
+    margin-left: -40px;
 `
 
 export const CardTittle = styled.Text`
@@ -85,7 +87,8 @@ export const CardStatusBox = styled.View`
 `
 
 export const IconNumber = styled.Image`
-    height: 60px;
-    width: 60px;
+    height: 150px;
+    width: 150px;
+    margin-left: -50px;
 `
 

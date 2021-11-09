@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import * as S from './style';
 import IconMenu from '../../assets/IconMenu.jpeg';
-import IconLogo from '../../assets/IconLogo.jpeg'
+import IconLogo from '../../assets/IconLogo.png'
 import IconFunil from '../../assets/IconFunil.jpeg'
-import NumberContainer from '../../assets/NumberContainer.jpeg'
+import Number1 from '../../assets/Number1.png'
+import Number2 from '../../assets/Number2.png'
+import Number3 from '../../assets/Number3.png'
+import Number4 from '../../assets/Number4.png'
+import Number5 from '../../assets/Number5.png'
 
 export function Container6({ navigation }) {
     const [text, setText] = useState('');
@@ -26,7 +30,7 @@ export function Container6({ navigation }) {
                     <S.Tittle>Containers - 6 Metros</S.Tittle>
                 </S.ContainerText>
                 <S.CardContainer onPress={() => navigation.navigate('ContainerOptions')}>
-                    <S.IconNumber source={NumberContainer} />
+                    <S.IconNumber source={Number1} />
                     <S.CardContainerText>
                         <S.CardTittle>Escritório</S.CardTittle>
                         <S.CardSubTittle>c/ banheiro</S.CardSubTittle>
@@ -39,7 +43,20 @@ export function Container6({ navigation }) {
                 </S.CardContainer>
 
                 <S.CardContainer>
-                    <S.IconNumber source={NumberContainer} />
+                    <S.IconNumber source={Number2} />
+                    <S.CardContainerText>
+                        <S.CardTittle>Escritório</S.CardTittle>
+                        <S.CardSubTittle>c/ banheiro</S.CardSubTittle>
+                        <S.CardSubTittle>c/ ar condicionado</S.CardSubTittle>
+                    </S.CardContainerText>
+                    <S.CardStatus>
+                        <S.CardStatusText>Indisponível</S.CardStatusText>
+                        <S.CardStatusBox style={{backgroundColor:"red"}}/>
+                    </S.CardStatus>
+                </S.CardContainer>
+
+                <S.CardContainer>
+                    <S.IconNumber source={Number3} />
                     <S.CardContainerText>
                         <S.CardTittle>Escritório</S.CardTittle>
                         <S.CardSubTittle>c/ banheiro</S.CardSubTittle>
@@ -52,33 +69,20 @@ export function Container6({ navigation }) {
                 </S.CardContainer>
 
                 <S.CardContainer>
-                    <S.IconNumber source={NumberContainer} />
+                    <S.IconNumber source={Number4} />
                     <S.CardContainerText>
                         <S.CardTittle>Escritório</S.CardTittle>
                         <S.CardSubTittle>c/ banheiro</S.CardSubTittle>
                         <S.CardSubTittle>c/ ar condicionado</S.CardSubTittle>
                     </S.CardContainerText>
                     <S.CardStatus>
-                        <S.CardStatusText>Disponível</S.CardStatusText>
-                        <S.CardStatusBox />
+                        <S.CardStatusText>Indisponível</S.CardStatusText>
+                        <S.CardStatusBox style={{backgroundColor:"red"}}/>
                     </S.CardStatus>
                 </S.CardContainer>
 
                 <S.CardContainer>
-                    <S.IconNumber source={NumberContainer} />
-                    <S.CardContainerText>
-                        <S.CardTittle>Escritório</S.CardTittle>
-                        <S.CardSubTittle>c/ banheiro</S.CardSubTittle>
-                        <S.CardSubTittle>c/ ar condicionado</S.CardSubTittle>
-                    </S.CardContainerText>
-                    <S.CardStatus>
-                        <S.CardStatusText>Disponível</S.CardStatusText>
-                        <S.CardStatusBox />
-                    </S.CardStatus>
-                </S.CardContainer>
-
-                <S.CardContainer>
-                    <S.IconNumber source={NumberContainer} />
+                    <S.IconNumber source={Number5} />
                     <S.CardContainerText>
                         <S.CardTittle>Escritório</S.CardTittle>
                         <S.CardSubTittle>c/ banheiro</S.CardSubTittle>
