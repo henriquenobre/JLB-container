@@ -17,11 +17,11 @@ export function Container3({ navigation }) {
         <S.Container>
 
             <S.HeaderLogo>
-                <S.IconNavigation onPress={() => navigation.navigate('Menu')}>
-                    <S.HeaderIcon source={IconMenu} />
+                <S.IconNavigation style={{paddingLeft: 10}} onPress={() => navigation.navigate('Menu')}>
+                    <S.HeaderIcon source={IconMenu} style={{width: 50,height:50, marginTop: 65}} />
                 </S.IconNavigation>
                 <S.HeaderIcon source={IconLogo} />
-                <S.HeaderIcon source={IconFunil} />
+                <S.HeaderIcon source={IconFunil} style={{width: 50,height:50, marginTop: 65, marginRight:15}} />
             </S.HeaderLogo>
 
 

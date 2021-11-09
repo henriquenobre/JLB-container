@@ -17,7 +17,7 @@ export function ContainerOptions({ navigation }) {
                 <S.IconNavigation onPress={() => navigation.navigate('Menu')}>
                     <S.HeaderIcon source={IconMenu} />
                 </S.IconNavigation>
-                <S.IconNavigation onPress={() => navigation.navigate('Container')}>
+                <S.IconNavigation >
                     <S.IconNumber source={NumberContainer} />
                     <S.HeaderText>Container n°1</S.HeaderText>
                 </S.IconNavigation>
