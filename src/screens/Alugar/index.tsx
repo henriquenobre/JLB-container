@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import * as S from './style';
 import IconMenu from '../../assets/IconMenu.jpeg';
-import NumberContainer from '../../assets/NumberContainer.jpeg'
-import FotoContainer from '../../assets/FotoContainer.png'
+import Number1 from '../../assets/Number1.png'
 
 export function Alugar({ navigation }) {
     const [text, setText] = useState('');
@@ -16,7 +15,7 @@ export function Alugar({ navigation }) {
                     <S.HeaderIcon source={IconMenu} />
                 </S.IconNavigation>
                 <S.IconNavigation onPress={() => navigation.navigate('ContainerOptions')}>
-                    <S.IconNumber source={NumberContainer} />
+                    <S.IconNumber source={Number1} />
                     <S.HeaderText>Container n°1 {"\n"} Alugar</S.HeaderText>
                 </S.IconNavigation>
             </S.HeaderLogo>

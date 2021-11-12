@@ -27,12 +27,13 @@ export const IconNavigation = styled.TouchableOpacity`
 `
 
 export const IconNumber = styled.Image`
-    height: 60px;
-    width: 60px;
+    height: 150px;
+    width: 150px;
+    margin-left: -40px;
 `
 
 export const HeaderText = styled.Text`
-    margin-left: 10px;
+    margin-left: -40px;
     color: blue;
     font-size: 24px;
     font-weight: bold;
