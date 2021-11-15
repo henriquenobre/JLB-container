@@ -7,7 +7,8 @@ import Apploading from 'expo-app-loading';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { SignIn } from './src/screens/Signin/index';
+import { SignIn } from './src/screens/Signin/';
+import { SignUp } from './src/screens/SignUp/';
 import { Menu } from './src/screens/Menu';
 import { Container3 } from './src/screens/Container3';
 import { Container6 } from './src/screens/Container6';
@@ -40,6 +41,7 @@ export default function App(){
       headerShown: false
   }}>
     <Stack.Screen name="SingIn" component={SignIn} />
+    <Stack.Screen name="SingUp" component={SignUp} />
     <Stack.Screen name="Menu" component={Menu} />
     <Stack.Screen name="Container3" component={Container3} />
     <Stack.Screen name="Container6" component={Container6} />

@@ -8,7 +8,7 @@ import { Platform } from 'react-native';
 import { useEffect } from 'react';
 
 
-export function SignIn({ navigation }) {
+export function SignUp({ navigation }) {
     const [text, setText] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -47,7 +47,7 @@ export function SignIn({ navigation }) {
 
             <S.Content >
                 <S.Title >
-                    Login
+                    Cadastra-se
                 </S.Title>
 
                 <S.InputField
@@ -77,21 +77,18 @@ export function SignIn({ navigation }) {
                 {email === '' || password === ''
                 ?
                     <ButtonIcon
-                        title="Login"
+                        title="Cadastrar"
                         activeOpacity={0.5}
                         onPress={() => navigation.navigate('Menu')} 
                         disabled={true}
                     />                
                 :
                     <ButtonIcon
-                        title="Login"
+                        title="Cadastrar"
                         activeOpacity={0.5}
                         onPress={loginFirebase} 
                     />                
                 }
-                <S.SubTitle onPress={() => navigation.navigate('SingUp')}>
-                    Cadastre-se
-                </S.SubTitle>
 
             </S.Content>
         </S.Container>
