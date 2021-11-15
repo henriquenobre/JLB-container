@@ -42,5 +42,18 @@ export const SubTitle = styled.Text`
   text-align: center;
   font-family: sans-serif;
   font-size: 16px;
+`
+export const containerAlert = styled.View`
+    width: 300px;
+    height: 60px;
+    flex-direction: row;
+    margin-top: 20px; 
+    padding-left: 10px;
+    color: #bdbdbd;
+    font-size: 15px;
+`
 
+export const TextWarning = styled.Text`
+    margin-left: 15px;
+    color: #4d5156;
 `

@@ -1,6 +1,6 @@
-import * as firebase from 'firebase';
-import '@firebase/auth';
-import '@firebase/firestore';
+import { initializeApp } from 'firebase/app';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBVkGenE1_Du6PcJZMWSHCVha_vrUh7va0",
@@ -12,8 +12,8 @@ const firebaseConfig = {
   measurementId: "G-2RL6CPG3GB"
 };
 
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
+firebase.initializeApp(firebaseConfig);
 
-export { firebase };
+export const auth = firebase.auth();
+
+

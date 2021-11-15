@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
 import { ButtonIcon } from '../../components/Buttonicon';
 import IllustrationImg from '../../assets/illustration.jpeg'
-import {firebase} from '../../config/firebaseConfig.js'
+import {auth} from '../../config/firebaseConfig.js'
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import * as S from './style';
 import { Platform } from 'react-native';
+import { useEffect } from 'react';
+
 
 export function SignIn({ navigation }) {
     const [text, setText] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [errorLogin, setErrorLogin] = useState<boolean>();
+
+    useEffect(() => {
+        setErrorLogin(false)
+    }, [email, password])
 
     const loginFirebase = () => {
-        firebase.auth().createUserWithEmailAndPassword(email, password)
+        console.log('entrou')
+        auth.signInWithEmailAndPassword(email, password)
         .then((userCredential: any) => {
           
           let user = userCredential.user;
@@ -20,9 +29,9 @@ export function SignIn({ navigation }) {
           
         })
         .catch((error: any) => {
-        
+          setErrorLogin(true)
           let errorCode = error.code;
-          let errorMessage = error.message;
+          let errorMessage = error.message; 
           // ..
         });
     }
@@ -51,6 +60,19 @@ export function SignIn({ navigation }) {
                     secureTextEntry={true}
                     onChangeText={(text) => setPassword(text)}
                 />
+                {errorLogin 
+                ?
+                <S.containerAlert>
+                    <MaterialCommunityIcons 
+                    name='alert-circle'
+                    size={20}
+                    color='#ff4040'
+                    />
+                <S.TextWarning>Email ou Senha Inválidos</S.TextWarning>
+                </S.containerAlert>
+                :
+                <></>
+                }
 
                 {email === '' || password === ''
                 ?
