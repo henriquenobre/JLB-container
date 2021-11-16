@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ButtonIcon } from '../../components/Buttonicon';
 import IllustrationImg from '../../assets/illustration.jpeg'
-import {auth} from '../../config/firebaseConfig.js'
+import { auth } from '../../config/firebaseConfig.js'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import * as S from './style';
 import { Platform } from 'react-native';
@@ -12,28 +12,28 @@ export function SignUp({ navigation }) {
     const [text, setText] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [errorLogin, setErrorLogin] = useState<boolean>();
+    const [errorRegister, setErrorRegister] = useState<boolean>();
 
     useEffect(() => {
-        setErrorLogin(false)
+        setErrorRegister(false)
     }, [email, password])
 
-    const loginFirebase = () => {
-        console.log('entrou')
-        auth.signInWithEmailAndPassword(email, password)
-        .then((userCredential: any) => {
-          
-          let user = userCredential.user;
-          console.log(user)
-          navigation.navigate('Menu')
-          
-        })
-        .catch((error: any) => {
-          setErrorLogin(true)
-          let errorCode = error.code;
-          let errorMessage = error.message; 
-          // ..
-        });
+
+    const register = () => {
+        auth.createUserWithEmailAndPassword(email, password)
+            .then((userCredential) => {
+                // Signed in
+                var user = userCredential.user;
+                navigation.navigate('SingIn')
+                console.log('cadastrou')
+                // ...
+            })
+            .catch((error) => {
+                setErrorRegister(true)
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                // ..
+            });
     }
 
 
@@ -47,11 +47,11 @@ export function SignUp({ navigation }) {
 
             <S.Content >
                 <S.Title >
-                    Cadastra-se
+                    Cadastre-se
                 </S.Title>
 
                 <S.InputField
-                    placeholder="Usuário"
+                    placeholder="Email"
                     onChangeText={(text) => setEmail(text)}
 
                 />
@@ -60,35 +60,38 @@ export function SignUp({ navigation }) {
                     secureTextEntry={true}
                     onChangeText={(text) => setPassword(text)}
                 />
-                {errorLogin 
-                ?
-                <S.containerAlert>
-                    <MaterialCommunityIcons 
-                    name='alert-circle'
-                    size={20}
-                    color='#ff4040'
-                    />
-                <S.TextWarning>Email ou Senha Inválidos</S.TextWarning>
-                </S.containerAlert>
-                :
-                <></>
+                {errorRegister
+                    ?
+                    <S.containerAlert>
+                        <MaterialCommunityIcons
+                            name='alert-circle'
+                            size={20}
+                            color='#ff4040'
+                        />
+                        <S.TextWarning>Digite uma senha com no mínimo 6 dígitos</S.TextWarning>
+                    </S.containerAlert>
+                    :
+                    <></>
                 }
 
                 {email === '' || password === ''
-                ?
+                    ?
                     <ButtonIcon
                         title="Cadastrar"
                         activeOpacity={0.5}
-                        onPress={() => navigation.navigate('Menu')} 
+                        onPress={() => navigation.navigate('SignIn')}
                         disabled={true}
-                    />                
-                :
+                    />
+                    :
                     <ButtonIcon
                         title="Cadastrar"
                         activeOpacity={0.5}
-                        onPress={loginFirebase} 
-                    />                
+                        onPress={register}
+                    />
                 }
+                <S.SubTitle onPress={() => navigation.navigate('SingIn')}>
+                    Ja é cadastrado?
+                </S.SubTitle>
 
             </S.Content>
         </S.Container>

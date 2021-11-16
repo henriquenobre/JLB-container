@@ -20,22 +20,20 @@ export function SignIn({ navigation }) {
    
 
     const loginFirebase = () => {
-        console.log('entrou')
-        navigation.navigate('Menu')
 
-        // auth.signInWithEmailAndPassword(email, password)
-        // .then((userCredential: any) => {
+        auth.signInWithEmailAndPassword(email, password)
+        .then((userCredential: any) => {
           
-        //   let user = userCredential.user;
-        //   navigation.navigate('Menu')
+          let user = userCredential.user;
+          navigation.navigate('Menu')
           
-        // })
-        // .catch((error: any) => {
-        //   setErrorLogin(true)
-        //   let errorCode = error.code;
-        //   let errorMessage = error.message; 
-        //   // ..
-        // });
+        })
+        .catch((error: any) => {
+          setErrorLogin(true)
+          let errorCode = error.code;
+          let errorMessage = error.message; 
+          // ..
+        });
     }
 
 
@@ -53,7 +51,7 @@ export function SignIn({ navigation }) {
                 </S.Title>
 
                 <S.InputField
-                    placeholder="Usuário"
+                    placeholder="Email"
                     onChangeText={(text) => setEmail(text)}
 
                 />
