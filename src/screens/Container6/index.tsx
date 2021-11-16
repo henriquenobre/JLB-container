@@ -8,10 +8,11 @@ import Number2 from '../../assets/Number2.png'
 import Number3 from '../../assets/Number3.png'
 import Number4 from '../../assets/Number4.png'
 import Number5 from '../../assets/Number5.png'
+import { useEffect } from 'react';
 
-export function Container6({ navigation }) {
+export function Container6({ route, navigation }) {
     const [text, setText] = useState('');
-
+    const { id } = route.params;
 
     return (
         <S.Container>

@@ -36,21 +36,21 @@ export default function App(){
 
   return(
     <NavigationContainer>
-      <Stack.Navigator
-      screenOptions={{
-      headerShown: false
+    <Stack.Navigator
+    screenOptions={{
+    headerShown: false
   }}>
-    <Stack.Screen name="SingIn" component={SignIn} />
-    <Stack.Screen name="SingUp" component={SignUp} />
-    <Stack.Screen name="Menu" component={Menu} />
-    <Stack.Screen name="Container3" component={Container3} />
-    <Stack.Screen name="Container6" component={Container6} />
-    <Stack.Screen name="ContainerOptions" component={ContainerOptions} />
-    <Stack.Screen name="Locacao" component={Locacao} />
-    <Stack.Screen name="Especificacoes" component={Especificacoes} />
-    <Stack.Screen name="Contrato" component={Contrato} />
-    <Stack.Screen name="Alugar" component={Alugar} />
-    <Stack.Screen name="Encerrar" component={Encerrar} />
+      <Stack.Screen name="SingIn" component={SignIn} />
+      <Stack.Screen name="SingUp" component={SignUp} />
+      <Stack.Screen name="Menu" component={Menu} />
+      <Stack.Screen name="Container3" component={Container3} />
+      <Stack.Screen name="Container6" component={Container6} />
+      <Stack.Screen name="ContainerOptions" component={ContainerOptions} />
+      <Stack.Screen name="Locacao" component={Locacao} />
+      <Stack.Screen name="Especificacoes" component={Especificacoes} />
+      <Stack.Screen name="Contrato" component={Contrato} />
+      <Stack.Screen name="Alugar" component={Alugar} />
+      <Stack.Screen name="Encerrar" component={Encerrar} />
     </Stack.Navigator>
     </NavigationContainer>
   );

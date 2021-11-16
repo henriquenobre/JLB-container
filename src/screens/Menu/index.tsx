@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { containers } from './fakeData'
 import IllustrationImg from '../../assets/illustration.jpeg'
 import StatusIcon from '../../assets/status.png'
 import Container3Icon from '../../assets/container3.png'
@@ -8,12 +9,14 @@ import LocalizacaoIcon from '../../assets/localizacao.png'
 import * as S from './style';
 
 export function Menu({ navigation }) {
-    const [text, setText] = useState('');
+    const [text, setText] = useState('');  
 
-
+    useEffect(() => {
+        console.log(containers)
+    }, [])
+        
     return (
         <S.Container>
-
             <S.Image
                 source={IllustrationImg}
                 resizeMode="stretch"
@@ -24,10 +27,12 @@ export function Menu({ navigation }) {
                     <S.TextCard >Status</S.TextCard>
                     <S.IconImage
                         source={StatusIcon}
-                    />
+                        />
                 </S.CardMenu>
 
-                <S.CardMenu onPress={() => navigation.navigate('Container6')}>
+               {console.log(containers)}
+
+                <S.CardMenu onPress={() => navigation.navigate('Container6', {id: 50})}>
                     <S.TextCard>Containers 6M</S.TextCard>
                     <S.IconImage
                         source={Container3Icon}

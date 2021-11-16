@@ -12,28 +12,30 @@ export function SignIn({ navigation }) {
     const [text, setText] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [errorLogin, setErrorLogin] = useState<boolean>();
+    const [errorLogin, setErrorLogin] = useState<boolean>(false);
 
     useEffect(() => {
         setErrorLogin(false)
     }, [email, password])
+   
 
     const loginFirebase = () => {
         console.log('entrou')
-        auth.signInWithEmailAndPassword(email, password)
-        .then((userCredential: any) => {
+        navigation.navigate('Menu')
+
+        // auth.signInWithEmailAndPassword(email, password)
+        // .then((userCredential: any) => {
           
-          let user = userCredential.user;
-          console.log(user)
-          navigation.navigate('Menu')
+        //   let user = userCredential.user;
+        //   navigation.navigate('Menu')
           
-        })
-        .catch((error: any) => {
-          setErrorLogin(true)
-          let errorCode = error.code;
-          let errorMessage = error.message; 
-          // ..
-        });
+        // })
+        // .catch((error: any) => {
+        //   setErrorLogin(true)
+        //   let errorCode = error.code;
+        //   let errorMessage = error.message; 
+        //   // ..
+        // });
     }
 
 
