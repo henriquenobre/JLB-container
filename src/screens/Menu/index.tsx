@@ -23,7 +23,7 @@ export function Menu({ navigation }) {
             />
 
             <S.Content >
-                <S.CardMenu activeOpacity={0.5}>
+                <S.CardMenu onPress={() => navigation.navigate('Status', {id: 50})}>
                     <S.TextCard >Status</S.TextCard>
                     <S.IconImage
                         source={StatusIcon}
@@ -39,26 +39,21 @@ export function Menu({ navigation }) {
                     />
                 </S.CardMenu>
 
-                <S.CardMenu onPress={() => navigation.navigate('Container3')}>
+                <S.CardMenu onPress={() => navigation.navigate('Container3', {id: 50})}>
                     <S.TextCard>Containers 3M</S.TextCard>
                     <S.IconImage
                         source={Container6Icon}
                     />
                 </S.CardMenu>
 
-                <S.CardMenu>
-                    <S.TextCard>Calendário</S.TextCard>
+                <S.CardMenu onPress={() => navigation.navigate('Notificacoes', {id: 50})}>
+                    <S.TextCard>Notificações</S.TextCard>
                     <S.IconImage
                         source={CalendarioIcon}
                     />
                 </S.CardMenu>
 
-                <S.CardMenu>
-                    <S.TextCard>Localização</S.TextCard>
-                    <S.IconImage
-                        source={LocalizacaoIcon}
-                    />
-                </S.CardMenu>
+               
 
             </S.Content>
         </S.Container>

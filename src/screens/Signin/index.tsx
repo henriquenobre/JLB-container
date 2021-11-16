@@ -20,6 +20,7 @@ export function SignIn({ navigation }) {
    
 
     const loginFirebase = () => {
+        navigation.navigate('Menu')
 
         auth.signInWithEmailAndPassword(email, password)
         .then((userCredential: any) => {

@@ -18,9 +18,9 @@ export const HeaderLogo = styled.View`
 `
 
 export const HeaderIcon = styled.Image`
-    height: 80px;
-    width: 100px;
-    margin-top: 50px;
+    height: 35px;
+    width: 35px;
+    margin-top: 80px;
 `
 export const IconNavigation = styled.TouchableOpacity``
 
@@ -41,8 +41,9 @@ export const ContainerText = styled.View`
 
 export const Tittle = styled.Text`
     color: blue;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
+    margin-top: 80px;
 `
 
 export const CardContainer = styled.TouchableOpacity`    

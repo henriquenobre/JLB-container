@@ -44,6 +44,7 @@ export const Tittle = styled.Text`
     font-size: 24px;
     font-weight: bold;
     margin-top: 80px;
+    margin-left: -25px;
 `
 
 export const CardContainer = styled.TouchableOpacity`    
@@ -52,9 +53,9 @@ export const CardContainer = styled.TouchableOpacity`
   height: 80px;
   width: 320px;
   background-color: #fbfbfb;
-  border-radius: 8px;
+  margin-top: 5px;
   padding-left: 10px;
-  margin-top: 10px;
+  
 `
 export const CardContainerText = styled.View`
     display: flex;

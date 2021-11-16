@@ -10,12 +10,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SignIn } from './src/screens/Signin/';
 import { SignUp } from './src/screens/SignUp/';
 import { Menu } from './src/screens/Menu';
+import { Status } from './src/screens/Status';
 import { Container3 } from './src/screens/Container3';
 import { Container6 } from './src/screens/Container6';
+import { Notificacoes } from './src/screens/Notificacoes';
 import { ContainerOptions } from './src/screens/ContainerOptions';
 import { Locacao } from './src/screens/Locacao';
 import { Especificacoes } from './src/screens/Especificacoes';
 import { Contrato } from './src/screens/Contrato';
+import { Localizacao } from './src/screens/Localizacao';
 import { Alugar } from './src/screens/Alugar';
 import { Encerrar } from './src/screens/Encerrar';
 
@@ -43,12 +46,15 @@ export default function App(){
       <Stack.Screen name="SingIn" component={SignIn} />
       <Stack.Screen name="SingUp" component={SignUp} />
       <Stack.Screen name="Menu" component={Menu} />
+      <Stack.Screen name="Status" component={Status} />
       <Stack.Screen name="Container3" component={Container3} />
       <Stack.Screen name="Container6" component={Container6} />
+      <Stack.Screen name="Notificacoes" component={Notificacoes} />
       <Stack.Screen name="ContainerOptions" component={ContainerOptions} />
       <Stack.Screen name="Locacao" component={Locacao} />
       <Stack.Screen name="Especificacoes" component={Especificacoes} />
       <Stack.Screen name="Contrato" component={Contrato} />
+      <Stack.Screen name="Localizacao" component={Localizacao} />
       <Stack.Screen name="Alugar" component={Alugar} />
       <Stack.Screen name="Encerrar" component={Encerrar} />
     </Stack.Navigator>

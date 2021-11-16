@@ -5,6 +5,7 @@ import Number1 from '../../assets/Number1.png'
 import ContainerAlugar from '../../assets/ContainerAlugar.png'
 import ContainerEspecificacoes from '../../assets/ContainerEspecificacoes.png'
 import ContainerInformacoes from '../../assets/ContainerInformacoes.png'
+import Localizacao from '../../assets/localizacao.png'
 
 export function ContainerOptions({ navigation }) {
     const [text, setText] = useState('');
@@ -39,6 +40,11 @@ export function ContainerOptions({ navigation }) {
                 <S.CardContainer onPress={() => navigation.navigate('Contrato')}>
                     <S.CardIcon source={ContainerInformacoes} />
                     <S.CardTittle>Contrato/ {"\n"}Informações</S.CardTittle>
+                </S.CardContainer>
+
+                <S.CardContainer onPress={() => navigation.navigate('Localizacao')}>
+                    <S.CardIcon source={Localizacao} />
+                    <S.CardTittle>Localização</S.CardTittle>
                 </S.CardContainer>
 
             </S.Content>
