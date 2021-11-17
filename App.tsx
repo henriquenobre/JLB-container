@@ -11,8 +11,7 @@ import { SignIn } from './src/screens/Signin/';
 import { SignUp } from './src/screens/SignUp/';
 import { Menu } from './src/screens/Menu';
 import { Status } from './src/screens/Status';
-import { Container3 } from './src/screens/Container3';
-import { Container6 } from './src/screens/Container6';
+import { Container } from './src/screens/Containers';
 import { Notificacoes } from './src/screens/Notificacoes';
 import { ContainerOptions } from './src/screens/ContainerOptions';
 import { Locacao } from './src/screens/Locacao';
@@ -47,8 +46,7 @@ export default function App(){
       <Stack.Screen name="SingUp" component={SignUp} />
       <Stack.Screen name="Menu" component={Menu} />
       <Stack.Screen name="Status" component={Status} />
-      <Stack.Screen name="Container3" component={Container3} />
-      <Stack.Screen name="Container6" component={Container6} />
+      <Stack.Screen name="Container" component={Container} />
       <Stack.Screen name="Notificacoes" component={Notificacoes} />
       <Stack.Screen name="ContainerOptions" component={ContainerOptions} />
       <Stack.Screen name="Locacao" component={Locacao} />
