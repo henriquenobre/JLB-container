@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as S from './style';
-import IconMenu from '../../assets/IconMenu.jpeg';
+import IconMenu from '../../assets/IconMenu.png';
 import Number1 from '../../assets/Number1.png'
 import ContainerAlugar from '../../assets/ContainerAlugar.png'
 
@@ -12,12 +12,12 @@ export function Contrato({ navigation }) {
         <S.Container>
 
             <S.HeaderLogo>
-                <S.IconNavigation onPress={() => navigation.navigate('Menu')}>
-                    <S.HeaderIcon source={IconMenu} />
-                </S.IconNavigation>
                 <S.IconNavigation onPress={() => navigation.navigate('ContainerOptions')}>
                     <S.IconNumber source={Number1} />
-                    <S.HeaderText>Container n°1 {"\n"} Contrato</S.HeaderText>
+                    <S.HeaderText>Container n°1-Contrato</S.HeaderText>
+                </S.IconNavigation>
+                <S.IconNavigation onPress={() => navigation.navigate('Menu')}>
+                    <S.HeaderIcon source={IconMenu} />
                 </S.IconNavigation>
             </S.HeaderLogo>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { containers } from './fakeData'
-import IllustrationImg from '../../assets/illustration.jpeg'
+import IllustrationImg from '../../assets/logoLogin.png'
 import StatusIcon from '../../assets/status.png'
 import Container3Icon from '../../assets/container3.png'
 import Container6Icon from '../../assets/container6.png'

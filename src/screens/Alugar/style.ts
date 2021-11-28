@@ -13,11 +13,13 @@ export const HeaderLogo = styled.View`
     flex-direction: row;
     background: white;
     width: 100%;
-    height: 150px;
+    height: 100px;
 `
 
 export const HeaderIcon = styled.Image`
-   
+   height: 25px;
+    width: 25px;
+    margin-left: 20px;
 `
 export const IconNavigation = styled.TouchableOpacity`
     display: flex;

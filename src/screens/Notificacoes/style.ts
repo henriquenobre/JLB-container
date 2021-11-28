@@ -14,13 +14,13 @@ export const HeaderLogo = styled.View`
     justify-content: space-between;
     background: white;
     width: 100%;
-    height: 150px;
+    height: 100px;
 `
 
 export const HeaderIcon = styled.Image`
-    height: 35px;
-    width: 35px;
-    margin-top: 40px;
+    height: 25px;
+    width: 25px;
+    margin-top: -10px;
 `
 export const IconNavigation = styled.TouchableOpacity`
     display: flex;
@@ -39,7 +39,7 @@ export const Tittle = styled.Text`
     color: blue;
     font-size: 24px;
     font-weight: bold;
-    margin: 100px 30px 0 30px;
+    margin-top: 45px;
 `
 
 export const HeaderText = styled.Text`

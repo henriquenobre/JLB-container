@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ButtonIcon } from '../../components/Buttonicon';
-import IllustrationImg from '../../assets/illustration.jpeg'
+import IllustrationImg from '../../assets/logoLogin.png'
 import { auth } from '../../config/firebaseConfig.js'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import * as S from './style';

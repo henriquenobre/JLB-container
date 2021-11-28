@@ -11,7 +11,7 @@ export function Notificacoes({ navigation }) {
         <S.Container>
 
             <S.HeaderLogo>
-                <S.HeaderIcon style={{ height: 50, width: 50, marginLeft: 5, marginTop: 80 }} source={IconTriangulo} />
+                <S.HeaderIcon style={{ height: 40, width: 40, marginLeft: 5, marginTop: 40 }} source={IconTriangulo} />
                 <S.Tittle>Notificações</S.Tittle>
                 <S.IconNavigation onPress={() => navigation.navigate('Menu')}>
                     <S.HeaderIcon source={IconMenu} style={{ marginRight: 15 }} />

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import * as S from './style';
-import IconMenu from '../../assets/IconMenu.jpeg';
+import IconMenu from '../../assets/IconMenu.png';
 import Number1 from '../../assets/Number1.png'
 import ContainerAlugar from '../../assets/ContainerAlugar.png'
+import ContainerEncerrar from '../../assets/ContainerEncerrar.png'
 
 export function Locacao({ navigation }) {
     const [text, setText] = useState('');
@@ -10,14 +11,13 @@ export function Locacao({ navigation }) {
 
     return (
         <S.Container>
-
             <S.HeaderLogo>
-                <S.IconNavigation onPress={() => navigation.navigate('Menu')}>
-                    <S.HeaderIcon source={IconMenu} />
-                </S.IconNavigation>
                 <S.IconNavigation onPress={() => navigation.navigate('ContainerOptions')}>
                     <S.IconNumber source={Number1} />
-                    <S.HeaderText>Container n°1 {"\n"} Locação</S.HeaderText>
+                    <S.HeaderText>Container n°1-Locação</S.HeaderText>
+                </S.IconNavigation>
+                <S.IconNavigation onPress={() => navigation.navigate('Menu')}>
+                    <S.HeaderIcon source={IconMenu} />
                 </S.IconNavigation>
             </S.HeaderLogo>
 
@@ -30,7 +30,7 @@ export function Locacao({ navigation }) {
                 </S.CardContainer>
 
                 <S.CardContainer onPress={() => navigation.navigate('Encerrar')}>
-                    <S.CardIcon source={ContainerAlugar} />
+                    <S.CardIcon source={ContainerEncerrar} />
                     <S.CardTittle>Encerrar</S.CardTittle>
                 </S.CardContainer>
 

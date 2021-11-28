@@ -13,11 +13,14 @@ export const HeaderLogo = styled.View`
     flex-direction: row;
     background: white;
     width: 100%;
-    height: 150px;
+    height: 100px;
 `
 
 export const HeaderIcon = styled.Image`
-   
+    height: 25px;
+    width: 25px;
+    margin-left: 70px;
+    margin-top: -10px;
 `
 export const IconNavigation = styled.TouchableOpacity`
     display: flex;
@@ -33,7 +36,8 @@ export const IconNumber = styled.Image`
 `
 
 export const HeaderText = styled.Text`
-    margin-left: -40px;
+    margin-left: -5px;
+    margin-top: -5px;
     color: blue;
     font-size: 24px;
     font-weight: bold;

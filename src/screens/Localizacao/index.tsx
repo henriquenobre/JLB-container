@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import * as S from './style';
 import IconMenu from '../../assets/IconMenu.png';
-import IconTriangulo from '../../assets/IconTriangulo.png';
-import LocalizacaoImg from '../../assets/localizacao.jpeg';
+import IconTriangulo from '../../assets/localizacao.png';
+import LocalizacaoImg from '../../assets/localizacaoImg.png';
 
 
 export function Localizacao({ navigation }) {
@@ -11,15 +11,13 @@ export function Localizacao({ navigation }) {
 
     return (
         <S.Container>
-
             <S.HeaderLogo>
-                <S.HeaderIcon style={{ height: 50, width: 50, marginLeft: 5, marginTop: 80 }} source={IconTriangulo} />
+                <S.HeaderIcon style={{ height: 80, width: 80, marginTop: 25 }} source={IconTriangulo} />
                 <S.Tittle>Localização</S.Tittle>
                 <S.IconNavigation onPress={() => navigation.navigate('Menu')}>
                     <S.HeaderIcon source={IconMenu} style={{ marginRight: 15 }} />
                 </S.IconNavigation>
             </S.HeaderLogo>
-
 
             <S.Content >
                 <S.LocImg source={LocalizacaoImg} />

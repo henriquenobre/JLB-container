@@ -14,13 +14,13 @@ export const HeaderLogo = styled.View`
     justify-content: space-between;
     background: white;
     width: 100%;
-    height: 150px;
+    height: 100px;
 `
 
 export const HeaderIcon = styled.Image`
-    height: 35px;
-    width: 35px;
-    margin-top: 40px;
+    height: 25px;
+    width: 25px;
+    margin-top: -7px;
 `
 export const IconNavigation = styled.TouchableOpacity`
     display: flex;
@@ -39,7 +39,8 @@ export const Tittle = styled.Text`
     color: blue;
     font-size: 24px;
     font-weight: bold;
-    margin: 100px 30px 0 30px;
+    margin-top: 50px;
+    margin-left: -30px;
 `
 
 export const HeaderText = styled.Text`
@@ -52,9 +53,10 @@ export const HeaderText = styled.Text`
 export const Content = styled.View`
     justify-content: center;
     align-items: center;
-    margin-top: 130px;
+    margin-top: 85px;
 `
-export const LocImg = styled.Image`justify-content
+export const LocImg = styled.Image`
+    margin-left: -400px;
 `
 
 

@@ -9,15 +9,13 @@ export const Container = styled.View`
 `;
 
 export const Image = styled.Image`
-  width: 200px;
-  height: 160px;
-  margin-top: -50px;
+  width: 300px;
+  height: 300px;
 `
 
 export const Content = styled.View`
   justify-content: center;
     align-items: center;
-    margin-top: 100px;
 `
 export const CardMenu = styled.TouchableOpacity`    
   flex-direction: row;

@@ -14,20 +14,20 @@ export const HeaderLogo = styled.View`
     justify-content: space-between;
     background: white;
     width: 100%;
-    height: 150px;
+    height: 100px;
 `
 
 export const HeaderIcon = styled.Image`
-    height: 35px;
-    width: 35px;
-    margin-top: 80px;
+    height: 25px;
+    width: 25px;
+    margin-top: 50px;
 `
 export const IconNavigation = styled.TouchableOpacity``
 
 export const Content = styled.View`
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
 `
 export const ContainerText = styled.View`
     display: flex;
@@ -43,7 +43,7 @@ export const Tittle = styled.Text`
     color: blue;
     font-size: 24px;
     font-weight: bold;
-    margin-top: 80px;
+    margin-top: 45px;
     margin-left: -25px;
 `
 

@@ -9,9 +9,9 @@ export const Container = styled.KeyboardAvoidingView`
 `;
 
 export const Image = styled.Image`
-  width: 200px;
-  height: 160px;
-  margin-top: -50px;
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
 `
 export const Title = styled.Text`
   color: #ff9100;
@@ -25,7 +25,6 @@ export const Title = styled.Text`
 export const Content = styled.View`
   justify-content: center;
     align-items: center;
-    margin-top: 100px;
 `
 
 export const InputField = styled.TextInput`

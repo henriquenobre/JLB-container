@@ -18,7 +18,7 @@ export function Status({ route, navigation }) {
         <S.Container>
 
             <S.HeaderLogo>
-                <S.HeaderIcon style={{ height: 100, width:100, marginLeft: -20, marginTop:50 }} source={StatusIcon} />
+                <S.HeaderIcon style={{ height: 100, width:100, marginLeft: -20, marginTop: 15 }} source={StatusIcon} />
                 <S.Tittle>Status Container</S.Tittle>
                 <S.IconNavigation style={{ paddingLeft: 10 }} onPress={() => navigation.navigate('Menu')}>
                     <S.HeaderIcon source={IconMenu} style={{ marginRight: 15 }} />
