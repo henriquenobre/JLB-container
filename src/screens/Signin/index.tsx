@@ -20,8 +20,7 @@ export function SignIn({ navigation }) {
    
 
     const loginFirebase = () => {
-        navigation.navigate('Menu')
-
+        
         auth.signInWithEmailAndPassword(email, password)
         .then((userCredential: any) => {
           
@@ -87,7 +86,7 @@ export function SignIn({ navigation }) {
                     <ButtonIcon
                         title="Login"
                         activeOpacity={0.5}
-                        onPress={loginFirebase} 
+                        onPress={() => navigation.navigate('Menu')} 
                     />                
                 }
                 <S.SubTitle onPress={() => navigation.navigate('SingUp')}>

@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { containers } from './fakeData'
 import IllustrationImg from '../../assets/logoLogin.png'
 import StatusIcon from '../../assets/status.png'
 import Container3Icon from '../../assets/container3.png'
 import Container6Icon from '../../assets/container6.png'
 import CalendarioIcon from '../../assets/calendario.png'
-import LocalizacaoIcon from '../../assets/localizacao.png'
+import { containers } from './fakeData'
 import * as S from './style';
 
 export function Menu({ navigation }) {
     const [text, setText] = useState('');  
 
-    useEffect(() => {
-        console.log(containers)
-    }, [])
-        
     return (
         <S.Container>
             <S.Image
@@ -30,21 +25,14 @@ export function Menu({ navigation }) {
                         />
                 </S.CardMenu>
 
-               {console.log(containers)}
-
-                <S.CardMenu onPress={() => navigation.navigate('Container6', {id: 50})}>
-                    <S.TextCard>Containers 6M</S.TextCard>
-                    <S.IconImage
-                        source={Container3Icon}
-                    />
-                </S.CardMenu>
-
-                <S.CardMenu onPress={() => navigation.navigate('Container3', {id: 50})}>
-                    <S.TextCard>Containers 3M</S.TextCard>
-                    <S.IconImage
-                        source={Container6Icon}
-                    />
-                </S.CardMenu>
+               {containers.map((container) => 
+                    <S.CardMenu onPress={() => navigation.navigate('Container', {container})}>
+                        <S.TextCard>{container.name}</S.TextCard>
+                        <S.IconImage
+                            source={container.icon}
+                        />
+                    </S.CardMenu>                
+               )}
 
                 <S.CardMenu onPress={() => navigation.navigate('Notificacoes', {id: 50})}>
                     <S.TextCard>Notificações</S.TextCard>

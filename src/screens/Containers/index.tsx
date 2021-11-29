@@ -11,16 +11,16 @@ import Number5 from '../../assets/Number5.png'
 import Number10 from '../../assets/Number10.png'
 import { useEffect } from 'react';
 
-export function Container3({ route, navigation }) {
+export function Container({ route, navigation }) {
+    const { container } = route.params;
     const [text, setText] = useState('');
-    const { id } = route.params;
+    
 
     return (
         <S.Container>
-
             <S.HeaderLogo>
                 <S.HeaderIcon style={{ marginLeft: 15 }} source={IconFunil} />
-                <S.Tittle>Containers - 3 Metros</S.Tittle>
+                <S.Tittle>{container.name}</S.Tittle>
                 <S.IconNavigation style={{ paddingLeft: 10 }} onPress={() => navigation.navigate('Menu')}>
                     <S.HeaderIcon source={IconMenu} style={{ marginRight: 15 }} />
                 </S.IconNavigation>
